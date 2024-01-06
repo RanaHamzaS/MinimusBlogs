@@ -2,7 +2,7 @@
 
 Welcome to MinimusBlogs - A Platform for Creative Expression through Blogging!
 
-![MinimusBlogs Logo](https://static-00.iconduck.com/assets.00/search-icon-2048x2048-zik280t3.png)
+<img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-zik280t3.png" alt="MinimusBlogs Logo" width="200"/>
 
 ## Introduction
 
