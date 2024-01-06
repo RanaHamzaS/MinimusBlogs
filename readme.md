@@ -2,7 +2,7 @@
 
 Welcome to MinimusBlogs - A Platform for Creative Expression through Blogging!
 
-![MinimusBlogs Logo](link_to_your_logo_image)
+![MinimusBlogs Logo](https://static-00.iconduck.com/assets.00/search-icon-2048x2048-zik280t3.png)
 
 ## Introduction
 
@@ -26,3 +26,6 @@ To get started with MinimusBlogs, follow these simple steps:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/MinimusBlogs.git
+
+
+Image taken from IconDuck, We Do not own this image.
