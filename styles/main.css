@@ -5,8 +5,11 @@
   font-family: "Poppins";
 }
 body {
+  height: 100vh;
+  width: 100vw;
   background: url("/assets/login-bg.jpg") no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 body hr {
   margin: 0 20px 0 20px;
@@ -40,28 +43,12 @@ body header {
   justify-content: center;
   font-size: 12px;
 }
-.navright ul1 {
-  padding: 5px;
+.navright .btn-item {
+  padding: 4px;
   margin: 5px;
   border: 2px solid #008874;
   border-radius: 10px;
   width: 100px;
-  text-align: center;
-}
-.navright ul2 {
-  padding: 5px;
-  margin: 5px;
-  border: 2px solid #008874;
-  border-radius: 10px;
-  width: 100px;
-  text-align: center;
-}
-.navright ul3 {
-  padding: 5px;
-  margin: 5px;
-  border: 2px solid #008874;
-  border-radius: 10px;
-  width: 110px;
   text-align: center;
 }
 .post {
