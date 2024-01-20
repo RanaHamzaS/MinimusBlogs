@@ -15,7 +15,7 @@
             </div>
         </div>
        <div class="right-comment">
-        <div class="right-post">
+        <!-- <div class="right-post">
             <div class="post-person"></div>
             <div>
                 <div class="person-name">Darab!</div>
@@ -23,26 +23,7 @@
                     Great Blog!
                 </div>
             </div>
-        </div>
-        <div class="right-post">
-            <div class="post-person"></div>
-            <div>
-                <div class="person-name">Darab!</div>
-                <div class="comment">
-                    Great Blog!
-                </div>
-            </div>
-        </div>
-        <div class="right-post">
-            <div class="post-person"></div>
-            <div>
-                <div class="person-name">Darab!</div>
-                <div class="comment">
-                    Great Blog!
-                </div>
-            </div>
-        </div>
-
+        </div> -->
        </div>
         
     </div>
@@ -58,8 +39,25 @@
         console.log(data);
         const title = document.querySelector(".post-title");
         const text = document.querySelector(".post-text");
+        const commentsHolder = document.querySelector(".right-comment");
         title.innerHTML = data.title;
         text.innerHTML = data.body;
+
+        fetch('https://dummyjson.com/comments').then(locked=>locked.json()).then(({ comments }) => {
+            for (let ix = 0; ix < comments.length; ix++) {
+                const element = comments[ix];
+            //     commentsHolder.innerHTML = `
+            // <div class="right-post">
+            // <div class="post-person"></div>
+            // <div>
+            //     <div class="person-name">Darab!</div>
+            //     <div class="comment">
+            //         Great Blog!
+            //     </div>
+            // </div>
+            // </div>`
+            }
+        })
         
       });
 </script>
