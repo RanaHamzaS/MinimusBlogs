@@ -5,6 +5,13 @@
 body {
   background-image: url(/assets/login-bg.jpg);
 }
+.post-img img{
+    height: 300px;
+    width: 600px;
+    margin-left: 70px;
+    margin-top: 5px;
+}
+
 .post-contaier {
   display: flex;
   backdrop-filter: blur(10px);
@@ -28,7 +35,7 @@ body {
   align-items: center;
 }
 .post-title {
-  height: 250px;
+  height: 70px;
   width: 750px;
   font-size: 3rem;
   color: white;
@@ -38,7 +45,7 @@ body {
   color: white;
   text-wrap: balance;
   overflow: auto;
-  height: 250px;
+  height: 130px;
   width: 750px;
   text-align: center;
 }
