@@ -28,11 +28,13 @@
     <main>
       <section class="mainfirst">
         <div class="leftsection">
-          <div id="left1">Hi Everyone!</div>
-          <div id="left2">I'm <span>Hamza</span></div>
+          <div id="left1">Hello World!🌍 ~ Its good to see you!</div>
+          <div id="left2">Mini<span style="background-color: orange; color: white;">mus</span> Blogs!</div>
           <div id="left3">
-            This is my first bloging website, which everyne can use and post
-            their ideas on. This free to use and will change your mood.
+            Feel free to write whats on your mind, 
+            open-source project for everyone!! 🚀 <br>
+            Share your thoughts, write comments, on spent time
+            reading some articles!⚡
           </div>
         </div>
         <div class="rightsection">
@@ -59,14 +61,15 @@
         // Select the document element
         const section2 = document.querySelector(".section-2");
         for (let i = 0; i < data.posts.length; i++) {
+          console.log(data.posts[i])
           section2.innerHTML += `
           <div class="card">
               <div class="card-image"><img src="/assets/card1.jpeg" alt=""></div>
               <div class="card-text">
                 ${data.posts[i].title}
               </div>
-              <div class="card-reaction">
-                🩷${data.posts[i].reactions}
+              <div class="card-items">
+                <span class="reactions">🩷${data.posts[i].reactions}</span>
               </div>
           </div>`;
         }

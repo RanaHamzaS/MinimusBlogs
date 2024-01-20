@@ -1,5 +1,6 @@
 *{
-
+  font-family: "Poppins";
+  font-weight: 500;
 }
 body {
   background-image: url(/assets/login-bg.jpg);
@@ -10,7 +11,10 @@ body {
   border: solid 2px white;
   height: 550px;
   width: 1200px;
-  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border-radius: 8px;
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -19,8 +23,9 @@ body {
   height: 530px;
   width: 750px;
   backdrop-filter: blur(15px);
-  border: solid 2px white;
-    align-items: center;
+  border: solid 1px white;
+  border-radius: 8px;
+  align-items: center;
 }
 .post-title {
   height: 250px;
@@ -38,27 +43,24 @@ body {
   text-align: center;
 }
 .right-post {
+  display: flex;
   height: 90px;
   width: 350px;
   backdrop-filter: blur(15px);
-  border: solid 2px white;
+  border: solid 1px white;
+  border-radius: 8px;
   align-items: center;
 }
 .post-person {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   background-color: black;
   border-radius: 50%;
   margin: 5px;
 }
 .person-name {
-  text-align: center;
-  color: wheat;
+  color: white;
   font-size: 1rem;
-  margin-left: 50px;
-  align-items: center;
-  text-align: center;
-  align-items: center;
 }
 .comment {
   color: white;

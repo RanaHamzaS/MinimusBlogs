@@ -118,12 +118,12 @@ body header {
   display: flex;
   height: 800px;
   gap: 10px;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  /* flex-wrap: wrap; */
+  overflow: scroll;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  /* mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask: linear-gradient(to right, transparent, black 5%, black 95%, transparent); */
 }
 .section-3{
   border: #ff9800 solid 3px;
@@ -137,7 +137,7 @@ body header {
   border-radius: 8px;
   height: 270px;
   width: 250px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 .card-image{
   height: 160px;
@@ -157,11 +157,18 @@ body header {
   text-align: center;
   text-wrap: balance;
   color: white;
+  height: 50px;
 }
 
-.card-reaction {
+.card-items {
   margin-left: 12px;
+  margin-right: 12px;
   color: white;
+  display: flex;
+}
+
+.card-items > span.reactions {
+  flex: 1;
 }
 
 ::-webkit-scrollbar {
