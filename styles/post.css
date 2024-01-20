@@ -58,6 +58,8 @@ body {
   border: solid 1px white;
   border-radius: 8px;
   align-items: center;
+  margin: 5px 0px;
+  
 }
 .post-person {
   height: 60px;
@@ -84,4 +86,7 @@ body {
   width: fit-content;
   margin-left: 45%;
   cursor: pointer;
+}
+.right-comment{
+    flex-direction: column;
 }
