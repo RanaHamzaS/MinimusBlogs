@@ -63,8 +63,8 @@
         for (let i = 0; i < data.posts.length; i++) {
           console.log(data.posts[i])
           section2.innerHTML += `
-          <div class="card">
-              <div class="card-image"><img src="/assets/card1.jpeg" alt=""></div>
+          <div class="card" onclick="window.location.pathname = '/views/post.html'">
+              <div class="card-image"><img src="/assets/test-2.jpg" alt=""></div>
               <div class="card-text">
                 ${data.posts[i].title}
               </div>
