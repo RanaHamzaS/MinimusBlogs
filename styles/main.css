@@ -138,6 +138,7 @@ body header {
   height: 270px;
   width: 250px;
   backdrop-filter: blur(20px);
+  cursor: pointer;
 }
 .card-image{
   height: 160px;

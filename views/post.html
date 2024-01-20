@@ -46,7 +46,21 @@
        </div>
         
     </div>
-    <div class="button">⬅️ Go back.</div>
+    <div class="button" onclick="window.location.pathname = '/views/index.html'">⬅️ Go back.</div>
 </body> 
+<script>
+    const postId = localStorage.getItem('post_id');
 
+    fetch("https://dummyjson.com/posts/" + postId).then((lockedData) => lockedData.json())
+      .then((data) => {
+        // Select the document element
+
+        console.log(data);
+        const title = document.querySelector(".post-title");
+        const text = document.querySelector(".post-text");
+        title.innerHTML = data.title;
+        text.innerHTML = data.body;
+        
+      });
+</script>
 </html>

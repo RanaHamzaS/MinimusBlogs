@@ -42,6 +42,7 @@
         </div>
       </section>
       <section class="section-2">
+        <span style="color: white; font-size: 48px;">Loading Posts, Please be patient!.... 🚀🎯</span>
         <!-- <div class="card">
           <div class="card-image"><img src="/assets/card1.jpeg" alt=""></div>
           <div class="card-text">Now is the winter of our discontent
@@ -55,15 +56,21 @@
   </body>
   <script>
 
+    function openPost(id) {
+      window.location.pathname = '/views/post.html'
+      window.localStorage.setItem('post_id', id);
+    }
+
     fetch("https://dummyjson.com/posts")
       .then((lockedData) => lockedData.json())
       .then((data) => {
         // Select the document element
         const section2 = document.querySelector(".section-2");
+        section2.innerHTML = ''
         for (let i = 0; i < data.posts.length; i++) {
           console.log(data.posts[i])
           section2.innerHTML += `
-          <div class="card" onclick="window.location.pathname = '/views/post.html'">
+          <div class="card" onclick="openPost(${data.posts[i].id})">
               <div class="card-image"><img src="/assets/test-2.jpg" alt=""></div>
               <div class="card-text">
                 ${data.posts[i].title}

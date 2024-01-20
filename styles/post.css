@@ -36,7 +36,7 @@ body {
 .post-title {
   height: 70px;
   width: 750px;
-  font-size: 3rem;
+  font-size: 37px;
   color: white;
   text-align: left;
   margin-left: 30px;
@@ -49,6 +49,7 @@ body {
   width: 750px;
   text-align: left;
   margin-left: 30px;
+  font-size: 14px;
 }
 .right-post {
   display: flex;
