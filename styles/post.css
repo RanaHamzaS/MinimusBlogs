@@ -1,0 +1,65 @@
+*{
+
+}
+body {
+  background-image: url(/assets/login-bg.jpg);
+}
+.post-contaier {
+  display: flex;
+  backdrop-filter: blur(10px);
+  border: solid 2px white;
+  height: 550px;
+  width: 1200px;
+  position: absolute;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.left-post {
+  height: 530px;
+  width: 750px;
+  backdrop-filter: blur(15px);
+  border: solid 2px white;
+    align-items: center;
+}
+.post-title {
+  height: 250px;
+  width: 750px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.post-text {
+  color: white;
+  text-wrap: balance;
+  overflow: auto;
+  height: 250px;
+  width: 750px;
+  text-align: center;
+}
+.right-post {
+  height: 90px;
+  width: 350px;
+  backdrop-filter: blur(15px);
+  border: solid 2px white;
+  align-items: center;
+}
+.post-person {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 5px;
+}
+.person-name {
+  text-align: center;
+  color: wheat;
+  font-size: 1rem;
+  margin-left: 50px;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+}
+.comment {
+  color: white;
+}
