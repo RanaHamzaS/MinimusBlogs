@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 69%;
-  height: 100vh;
+  height: 100%;
 }
 body hr {
   margin: 0 20px 0 20px;
@@ -115,10 +115,15 @@ body header {
 
 /* main window second section styling start here */
 .section-2{
-  border: #ff9800 solid 3px;
   display: flex;
+  height: 800px;
   gap: 10px;
   overflow-x: scroll;
+  overflow-y: scroll;
+  /* flex-wrap: wrap; */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-3{
   border: #ff9800 solid 3px;
@@ -128,9 +133,11 @@ body header {
   margin-top: 80px;
 }
 .card{
-  border: #0f0f0f solid 3px;
+  border: 0.5px white solid;
+  border-radius: 8px;
   height: 270px;
   width: 250px;
+  backdrop-filter: blur(10px);
 }
 .card-image{
   height: 160px;
@@ -139,16 +146,22 @@ body header {
 }
 .card-image img{
   height: 150px;
-  width: 230px;
+  width: 96%;
   object-fit: cover;
   margin: 5px;
   border-radius: 6px;
 }
 .card-text{
-  font-size: 10px;
+  font-size: 15px;
   margin: 5px;
   text-align: center;
   text-wrap: balance;
+  color: white;
+}
+
+.card-reaction {
+  margin-left: 12px;
+  color: white;
 }
 
 ::-webkit-scrollbar {
