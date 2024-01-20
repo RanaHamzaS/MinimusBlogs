@@ -120,6 +120,13 @@ body header {
   gap: 10px;
   overflow-x: scroll;
 }
+.section-3{
+  border: #ff9800 solid 3px;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  margin-top: 80px;
+}
 .card{
   border: #0f0f0f solid 3px;
   height: 270px;
