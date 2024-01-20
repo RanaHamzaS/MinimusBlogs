@@ -118,7 +118,7 @@ body header {
   border: #ff9800 solid 3px;
   display: flex;
   gap: 10px;
-  overflow: ;
+  overflow-x: scroll;
 }
 .card{
   border: #0f0f0f solid 3px;
@@ -142,4 +142,8 @@ body header {
   margin: 5px;
   text-align: center;
   text-wrap: balance;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
