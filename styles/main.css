@@ -21,6 +21,8 @@ body header {
 /* Navigation bar styling start here */
 .navbar {
   height: 40px;
+  position: fixed;
+  z-index: 1000;
   color: white;
   background: transparent;
   backdrop-filter: blur(8px);
@@ -67,7 +69,7 @@ body header {
   width: 110px;
   text-align: center;
 }
-#post{
+#post {
   padding: 5px;
   margin: 10px;
   border: 2px solid #008874;
@@ -114,9 +116,10 @@ body header {
 /* main window first section styling end here */
 
 /* main window second section styling start here */
-.section-2{
+.section-2 {
   display: flex;
-  height: 800px;
+  height: 290px;
+  margin-bottom: 100px;
   gap: 10px;
   overflow: scroll;
   width: 80%;
@@ -125,14 +128,16 @@ body header {
   /* mask: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask: linear-gradient(to right, transparent, black 5%, black 95%, transparent); */
 }
-.section-3{
-  border: #ff9800 solid 3px;
+.section-3 {
   display: flex;
+  height: 400px;
   gap: 10px;
-  overflow-x: scroll;
-  margin-top: 80px;
+  overflow: scroll;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.card{
+.card {
   border: 0.5px white solid;
   border-radius: 8px;
   height: 270px;
@@ -140,19 +145,19 @@ body header {
   backdrop-filter: blur(20px);
   cursor: pointer;
 }
-.card-image{
+.card-image {
   height: 160px;
   width: 230px;
   object-fit: cover;
 }
-.card-image img{
+.card-image img {
   height: 150px;
   width: 96%;
   object-fit: cover;
   margin: 5px;
   border-radius: 6px;
 }
-.card-text{
+.card-text {
   font-size: 15px;
   margin: 5px;
   text-align: center;
@@ -176,3 +181,46 @@ body header {
   width: 0;
 }
 
+/* footer CSS */
+
+footer img {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.footer-socials{
+  padding: 15px 30px;
+  font-size: 16px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #c2c2c2, -8px -8px 16px #ffffff;
+}
+.footer {
+  height: 260px;
+  display: flex;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 30px 50px 30px;
+}
+.footer-about{
+  /* text-align: center;
+  margin-top: 30px; */
+  padding: 15px 30px;
+  font-size: 16px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #c2c2c2, -8px -8px 16px #ffffff;
+}
+footer .credentials {
+  font-size: small;
+  text-align: center;
+}

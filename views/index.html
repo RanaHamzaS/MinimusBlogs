@@ -52,34 +52,39 @@
             Now are our brows bound with victorious wreaths;</div>
         </div> -->
       </section>
+      <section class="section-3">
+        <span style="color: white; font-size: 48px;">Loading Posts, Please be patient!.... 🚀🎯</span>
+        <!-- <div class="card">
+          <div class="card-image"><img src="/assets/card1.jpeg" alt=""></div>
+          <div class="card-text">Now is the winter of our discontent
+            Made glorious summer by this sun of York;
+            And all the clouds that lour'd upon our house
+            In the deep bosom of the ocean buried.
+            Now are our brows bound with victorious wreaths;</div>
+        </div> -->
+      </section>
     </main>
   </body>
-  <script>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <ul>MinimusBlog!</ul>
+        <ul>About Us</ul>
+        <ul>News & Feeds</ul>
+      </div>
+      <div></div>
+      <div class="footer-socials">
+        <ul><img src="/assets/fb.png" alt=""></ul>
+        <ul><img src="/assets/insta.png" alt=""></ul>
+        <ul><img src="/assets/twt.png" alt=""></ul>
+      </div>
+    </div>
+    <div class="credentials">
+      © 2024 TIME USA, LLC. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Service, Privacy Policy
+    </div>
+  </footer>
+  <script src="/scripts/script.js">
 
-    function openPost(id) {
-      window.location.pathname = '/views/post.html'
-      window.localStorage.setItem('post_id', id);
-    }
 
-    fetch("https://dummyjson.com/posts")
-      .then((lockedData) => lockedData.json())
-      .then((data) => {
-        // Select the document element
-        const section2 = document.querySelector(".section-2");
-        section2.innerHTML = ''
-        for (let i = 0; i < data.posts.length; i++) {
-          console.log(data.posts[i])
-          section2.innerHTML += `
-          <div class="card" onclick="openPost(${data.posts[i].id})">
-              <div class="card-image"><img src="/assets/test-2.jpg" alt=""></div>
-              <div class="card-text">
-                ${data.posts[i].title}
-              </div>
-              <div class="card-items">
-                <span class="reactions">🩷${data.posts[i].reactions}</span>
-              </div>
-          </div>`;
-        }
-      });
   </script>
 </html>
