@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/post.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/post.css" />
+  </head>
+  <body>
     <div class="post-contaier">
-        <div class="left-post">
-            <div class="post-img"><img src="/assets/test-2.jpg" alt=""></div>
-            <div class="post-title">Blog title</div>
-            <div class="post-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque minus reprehenderit corporis facilis consequatur enim pariatur nam vel amet praesentium molestias tenetur, fuga veritatis a. Facilis deserunt fuga atque amet.
-            </div>
+      <div class="left-post">
+        <div class="post-img"><img src="/assets/test-2.jpg" alt="" /></div>
+        <div class="post-title">Blog title</div>
+        <div class="post-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque minus
+          reprehenderit corporis facilis consequatur enim pariatur nam vel amet
+          praesentium molestias tenetur, fuga veritatis a. Facilis deserunt fuga
+          atque amet.
         </div>
-       <div class="right-comment">
+      </div>
+      <div class="right-comment">
         <!-- <div class="right-post">
             <div class="post-person"></div>
             <div>
@@ -24,41 +28,14 @@
                 </div>
             </div>
         </div> -->
-       </div>
-        
+      </div>
     </div>
-    <div class="button" onclick="window.location.pathname = '/views/index.html'">⬅️ Go back.</div>
-</body> 
-<script>
-    const postId = localStorage.getItem('post_id');
-
-    fetch("https://dummyjson.com/posts/" + postId).then((lockedData) => lockedData.json())
-      .then((data) => {
-        // Select the document element
-
-        console.log(data);
-        const title = document.querySelector(".post-title");
-        const text = document.querySelector(".post-text");
-        const commentsHolder = document.querySelector(".right-comment");
-        title.innerHTML = data.title;
-        text.innerHTML = data.body;
-
-        fetch('https://dummyjson.com/comments').then(locked=>locked.json()).then(({ comments }) => {
-            for (let ix = 0; ix < comments.length; ix++) {
-                const element = comments[ix];
-            //     commentsHolder.innerHTML = `
-            // <div class="right-post">
-            // <div class="post-person"></div>
-            // <div>
-            //     <div class="person-name">Darab!</div>
-            //     <div class="comment">
-            //         Great Blog!
-            //     </div>
-            // </div>
-            // </div>`
-            }
-        })
-        
-      });
-</script>
+    <div
+      class="button"
+      onclick="window.location.pathname = '/views/index.html'"
+    >
+      ⬅️ Go back.
+    </div>
+  </body>
+  <script src="/scripts/script.js"></script>
 </html>

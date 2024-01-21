@@ -200,7 +200,7 @@ footer img {
 .footer {
   height: 260px;
   display: flex;
-  background-color: #ededed;
+  background-color: #e0e0e0;
   display: flex;
   flex-direction: column;
 }
