@@ -37,7 +37,7 @@ fetch("https://dummyjson.com/posts")
   .then((lockedData) => lockedData.json())
   .then((data) => {
     // Select the document element
-    const section2 = document.querySelector(".section-2");
+    const section2 = document.querySelector("#section-2");
     section2.innerHTML = ''
     for (let i = 0; i < data.posts.length; i++) {
       console.log(data.posts[i])
@@ -57,7 +57,7 @@ fetch("https://dummyjson.com/posts")
   .then((lockedData) => lockedData.json())
   .then((data) => {
     // Select the document element
-    const section3 = document.querySelector(".section-3");
+    const section3 = document.querySelector("#section-3");
     section3.innerHTML = ''
     for (let i = 0; i < data.posts.length; i++) {
       console.log(data.posts[i])
