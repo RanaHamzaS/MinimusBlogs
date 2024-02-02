@@ -87,3 +87,53 @@ body{
     text-decoration: none;
     color: #333;
 }
+.container{
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Poppins";
+}
+.container h1{
+    text-align: left;
+}
+#Register{
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(56, 53, 53);
+    cursor: pointer;
+    font: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.rtext{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+}
+h1{
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0 10px 45px;
+}
+.container input{
+    height: 20px;
+    width: 370px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255 255 255);
+    border-radius: 40px;
+    font-size: 17px;
+    color: white;
+    padding: 15px 45px 15px 20px;
+}
